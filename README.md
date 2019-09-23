@@ -35,8 +35,17 @@
   
   ![](images/https_clone.png)
 
-* 得到一个地址串,然后在服务器运行, `git https://github.com/xxxxx.git` 即可
+* 得到一个地址串,然后在服务器运行, `git https://github.com/xxxxx.git` 即可(注意:将同步到当前目录文件夹).
+* 进入clone的文件夹, 输入 `git add .`, 以后同步直接输入 `git pull` 就可以啦.
 
+* `git commit` 提交
+* `git push -u origin master` 设置分支
+
+7.$ git push -u origin master
+
+这时候搞好了,可以在github上面看到了,可以建立一个readme.md,然后从服务器同步到本地
+
+$ git pull
 
 
 
