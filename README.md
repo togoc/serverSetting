@@ -36,7 +36,7 @@
   
   ![](images/https_clone.png)
 
-* 得到一个地址串,然后在服务器运行, `git https://github.com/xxxxx.git` 即可(注意:将同步到当前目录文件夹).
+* 得到一个地址串,然后在服务器运行, `git clone https://github.com/xxxxx.git` 即可(注意:将同步到当前目录文件夹).
 * 进入clone的文件夹, 输入 `git add .`, 以后同步直接输入 `git pull` 就可以啦.
 
 * `git commit` 提交
@@ -44,6 +44,12 @@
 
 ##### SSH方法 
 
+  ![](images/ssh_clone.png)
+
+* `ssh-keygen -t rsa -C "your_email@example.com"` 生成SSH密匙(在.ssh目录)
+* `cat id_rsa.pub` 将内容复制到GitHub(setting中) 
+* 测试 `git clone git@github.com:xxxxxx.git`
+* `git add` 完成
 
 
 
