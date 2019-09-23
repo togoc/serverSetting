@@ -24,6 +24,18 @@
 
 #### SSH登录方式
 
+* 先在网页创建SSH密钥,后下载保存在 `.ssh` 文件夹,再在原网页绑定密钥到服务器实例(如不行到`实例`/`更多操作/加载密钥`那里绑定).
+* 绑定完成后即可在网页使用 `密钥` 登录,浏览选择生成下载的那个.
+* 在Xshell上登录服务器: `方法` 选 `Public Key`,用户名同上,用户密匙导入下载的那个,密码空,连接即可完成.
+
+#### 同步GitHub文件
+
+* 安装git: `sudo apt-get install git`
+* 先选择https方法 
+  
+  ![](images/https_clone.png)
+
+* 得到一个地址串,然后在服务器运行, `git https://github.com/xxxxx.git` 即可
 
 
 
