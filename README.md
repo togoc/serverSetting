@@ -1,4 +1,4 @@
-   <center># serverSetting</center>
+   <center>serverSetting</center>
    
 # 装系统
 * 这里选择腾讯云服务器
