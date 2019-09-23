@@ -31,7 +31,7 @@
 #### 同步GitHub文件
 
 * 安装git: `sudo apt-get install git`
-##### 先选择https方法 
+##### https方法 
   
   ![](images/https_clone.png)
 
@@ -41,7 +41,7 @@
 * `git commit` 提交
 * `git push -u origin master` 设置分支
 
-##### 先选择https方法 
+##### SSH方法 
 
 
 
