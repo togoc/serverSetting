@@ -31,7 +31,7 @@
 #### 同步GitHub文件
 
 * 安装git: `sudo apt-get install git`
-* 先选择https方法 
+##### * 先选择https方法 
   
   ![](images/https_clone.png)
 
@@ -41,11 +41,8 @@
 * `git commit` 提交
 * `git push -u origin master` 设置分支
 
-7.$ git push -u origin master
 
-这时候搞好了,可以在github上面看到了,可以建立一个readme.md,然后从服务器同步到本地
 
-$ git pull
 
 
 
