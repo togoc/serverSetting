@@ -1,4 +1,4 @@
-  # serverSetting
+# serverSetting
    
 # 装系统
 * 这里选择腾讯云服务器
@@ -43,6 +43,8 @@
 * `git push -u origin master` 设置分支
 
 ##### SSH方法 
+
+
 
 
 
