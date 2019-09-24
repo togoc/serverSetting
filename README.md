@@ -60,16 +60,16 @@
 * 配置supervisor : 进入目录`/etc/`或者`/etc/supervisor`下寻找 `supervisord.conf` 文件
 * 在`supervisord.conf`文件末尾添加:
   
-```
-[program:app_name]     ; 程序名字
-directroy=/usr/bin/nodejs  ; 程序所在的主目录
-command=node /var/www/Read_and_write_server/server.js  ; 执行程序的命令  
-autostart=true   ; 是否自动启动程序
-startsecs=5      ; 程序启动5秒种没有中断默认启动成功
-autorestart=true ; 是否重启
-startretries=3   ;重启失败尝试次数
-user=root        ; 执行程序的用户
-```
+   ```
+   [program:app_name]     ; 程序名字
+   directroy=/usr/bin/nodejs  ; 程序所在的主目录
+   command=node /var/www/Read_and_write_server/server.js  ; 执行程序的命令  
+   autostart=true   ; 是否自动启动程序
+   startsecs=5      ; 程序启动5秒种没有中断默认启动成功
+   autorestart=true ; 是否重启
+   startretries=3   ;重启失败尝试次数
+   user=root        ; 执行程序的用户
+   ```
     
 * `sudo  supervisord -c /etc/supervisor/supervisord.conf`读取配置(注意先停止supervisor程序)
   
