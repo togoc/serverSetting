@@ -73,6 +73,7 @@
     
 * `sudo  supervisord -c /etc/supervisor/supervisord.conf`读取配置(注意先停止supervisor程序)
   
+  
 * `ps -A | grep supervisord` kill pid 或者 `sudo supervisorctl shutdown` 终止
 * `service supervisor restart` 重启
 
