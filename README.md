@@ -77,6 +77,18 @@
 * `ps -A | grep supervisord` kill pid 或者 `sudo supervisorctl shutdown` 终止
 * `service supervisor restart` 重启
 
+### 通过web管理
+  supervisord可以通过web管理进程以及查看进程状态，需要在配置文件里开启
+
+  找到`[inet_http_server]`这一段，修改成
+  ```
+  [inet_http_server]         ; inet (TCP) server disabled by default
+  port=*:9001        ; (ip_address:port specifier, *:port for all iface)
+  username=admin             ; (default is no username (open server))
+  password=123               ; (default is no password (open server))
+  ```
+  其中port这个字段要各位注意，如果*:9001表示允许所有ip访问，如果指定单个IP可以 xx.xx.xx.xx:9001 这样既可。如果你开启了iptabls记得要在规则里允许port指定的端口号。
+
 ### 需要的软件
 
 * Github桌面版下载: [官网](https://desktop.github.com/) 或者 [腾讯云](https://share.weiyun.com/5opM4Qs) 或者 [百度网盘](https://pan.baidu.com/s/15iZCRjez6lY1fCsvVdlDLA)
