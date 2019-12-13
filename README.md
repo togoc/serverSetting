@@ -89,6 +89,20 @@
   ```
   其中port这个字段要各位注意，如果*:9001表示允许所有ip访问，如果指定单个IP可以 xx.xx.xx.xx:9001 这样既可。如果你开启了iptabls记得要在规则里允许port指定的端口号。
 
+
+### Linux下载包安装node
+
+1. 下载包: `wget https://npm.taobao.org/mirrors/node/v12.13.1/node-v12.13.1-linux-x64.tar.xz`
+2. 将tar.xz 解压成 .tar: `xz -d node-v12.13.1-linux-x64.tar.xz`
+3. 解压tar包: `tar -xvf node-v12.13.1-linux-x64.tar`
+4. `vim /etc/profile`
+5. 添加:  `export  PATH=/home/togoc/node-v12.13.0-linux-x64/bin:$PATH`
+6. 重启
+   * 这种安装使用 supervisor 可能会识别不出,很麻烦
+   * 推荐 `apt-get update` + `apt-get upgrade` 后使用 apt 安装 nodejs 然后再安装 npm
+
+
+
 ### 需要的软件
 
 * Github桌面版下载: [官网](https://desktop.github.com/) 或者 [腾讯云](https://share.weiyun.com/5opM4Qs) 或者 [百度网盘](https://pan.baidu.com/s/15iZCRjez6lY1fCsvVdlDLA)
