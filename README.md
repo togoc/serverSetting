@@ -96,10 +96,10 @@
 2. 将tar.xz 解压成 .tar: `xz -d node-v12.13.1-linux-x64.tar.xz`
 3. 解压tar包: `tar -xvf node-v12.13.1-linux-x64.tar`
 4. `vim /etc/profile`
-5. 添加:  `export  PATH=/home/togoc/node-v12.13.0-linux-x64/bin:$PATH`
+5. 添加:  `export  PATH=/node/node-v12.13.1-linux-x64/bin:$PATH`
 6. 重启
-   * 这种安装使用 supervisor 可能会识别不出,很麻烦
-   * 推荐 `apt-get update` + `apt-get upgrade` 后使用 apt 安装 nodejs 然后再安装 npm
+   * 这种安装使用 supervisor 可能会识别不出
+   * 使用`command=/node/node-v12.13.1-linux-x64/bin/node server.js`,不要使用node +  文件的形式
 
 
 
